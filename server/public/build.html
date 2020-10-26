@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8"/>
+        <title> Cyclehub </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <h1 class='title'> Cyclehub </h1>
+            <h3 class='greeting'> Hi </h3>
+            <button class='logout'> Log out </button>
+        </header>
+
+        <main>
+           <form class='bikebuild'> 
+            <input type="text" id="frame" name="frame" placeholder="Frame">
+            <input type="text" id="fork_headset" name="fork_headset" placeholder="Fork/Headset">
+            <input type="text" id="crankset" name="crankset" placeholder="Crankset">
+            <input type="text" id="pedals" name="pedals" placeholder="Pedals">
+            <input type="text" id="drivetrain" name="drivetrain" placeholder="Drivetrain">
+            <input type="text" id="handlebars" name="handlebars" placeholder="Handlebars">
+            <input type="text" id="saddle" name="saddle" placeholder="Saddle">
+            <input type="text" id="front_wheel" name="front_wheel" placeholder="Front Wheel">
+            <input type="text" id="rear_wheel" name="rear_wheel" placeholder="Rear Wheel">
+            <input type="text" id="more_info" name="more_info" placeholder="More Info.">
+            <button class='save_button'> Save </button>
+
+           </form>
+        </main>
+        <script src="http://localhost:5005/build.js"></script>
+        <script src="http://localhost:5005/logout.js"></script>
+        
+    </body>
+</html>

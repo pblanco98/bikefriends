@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8"/>
+        <title> Cyclehub </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+    </head>
+    <body>
+        <header>
+            <h1 class='title'> Cyclehub </h1>
+            <h3 class='greeting'> Edit Build </h3>
+            <button class='logout'> Log out </button>
+        </header>
+
+        <main>
+           <form class='bikebuild'> 
+            <input type="hidden" id="id" name="id" placeholder="id" value="{{id}}">
+            <input type="text" id="frame" name="frame" placeholder="Frame" value ="{{frame}}">
+            <input type="text" id="fork_headset" name="fork_headset" placeholder="Fork/Headset" value="{{fork_headset}}">
+            <input type="text" id="crankset" name="crankset" placeholder="Crankset" value="{{crankset}}">
+            <input type="text" id="pedals" name="pedals" placeholder="Pedals" value ="{{pedals}}">
+            <input type="text" id="drivetrain" name="drivetrain" placeholder="Drivetrain" value="{{drivetrain}}">
+            <input type="text" id="handlebars" name="handlebars" placeholder="Handlebars" value="{{handlebars}}">
+            <input type="text" id="saddle" name="saddle" placeholder="Saddle" value="{{saddle}}">
+            <input type="text" id="front_wheel" name="front_wheel" placeholder="Front Wheel" value="{{front_wheel}}">
+            <input type="text" id="rear_wheel" name="rear_wheel" placeholder="Rear Wheel" value="{{rear_wheel}}">
+            <input type="text" id="more_info" name="more_info" placeholder="More Info." value="{{more_info}}">
+            
+            <button class='save_button'> Edit </button>
+
+           </form>
+        </main>
+        <script src="http://localhost:5005/editBuild.js"></script>
+        <script src="http://localhost:5005/logout.js"></script>
+    </body>
+</html>

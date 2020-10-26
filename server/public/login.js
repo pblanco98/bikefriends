@@ -13,16 +13,22 @@ if (login_form !== null) {
             login_password,
         }
         console.log(account)
-    
+
         fetch(LOGIN_URL, {
             method: 'POST',
             body: JSON.stringify({
                 account
-        }),
+            }),
             headers: {
-            'content-type': 'application/json'
-            }
-        }
-        )
+                'content-type': 'application/json'
+            },
+
+        })
+        .then(res => res.json())
+        .then(response => {
+            // check that it is a redirect
+            console.log(response)
+            location.href = response.next;
+        })
     })
 }

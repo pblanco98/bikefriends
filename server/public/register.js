@@ -20,13 +20,12 @@ register_form.addEventListener ('submit', (event) => {
             account
         }),
         headers: {
-        'content-type': 'application/json'
+            'content-type': 'application/json'
         }
-    }).then(res => res.json())
+    })
+    .then(res => res.json())
     .then(res => {
-        if(res.errors.length > 0){
-            const accountElement = document.querySelector('.alerts')
-            accountElement.innerHTML = res.errors.join(', ')
-        }
-    }) 
+        console.log(res)
+        location.href = res.next;
+    })
 })
